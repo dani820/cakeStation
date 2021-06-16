@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* 메인 */
+main{
+	height: 1850px;
+}
+
+#main-search{
+	width: inherit;
+	height: 600px;
+	--border: 1px solid black;
+	background-image: url(/img/cake_main3.jpg);
+	background-color: rgb(255, 255, 255, 0.3);
+	background-size: 100%;
+}
+#main-search>form{
+	width: 30%;
+	float: left;
+	--border: 1px solid black;
+}
+#main-search>form>h2{
+	background-color: rgb(255, 255, 255, 0.3);
+	--display: inline-block;
+	margin-top: 50px;
+	margin-left: 80px;	
+	font-size: 40px;
+}
+.searchBtn input[type="radio"]{
+	display: none;
+}
+.searchBtn input[type="radio"] + span{
+	display: inline-block;
+	border: 2px solid #fec5bb;
+	background-color: #fec5bb;
+	border-radius: 5px;
+	--border: 1px solid black;
+	width: 95px;
+	height: 38px;
+	margin-right: 20px;
+	margin-bottom: 17px;
+	font-family: "NanumBarunpenB";
+	font-size: 18px;
+	text-align: center;
+	line-height: 37px;
+	position: relative;
+	left: 120px;
+	top: 100px;
+}
+.searchBtn input[type="radio"]:checked + span{
+	border: 2px solid #fec5bb;
+	background-color: #ffe5d9;
+}
+#searchNextBtn{
+	background-color: #fe6d73;
+	border-radius: 20px;
+	color: white;
+	--border: 1px solid black;
+	width: 95px;
+	height: 38px;
+	font-family: "NanumBarunpenB";
+	font-size: 18px;
+	position: relative;
+	left: 120px;
+	top: 300px;
+}
+#searchResult{
+	float: left;
+	--border: 1px solid black;
+	margin-right: 0px;
+	height: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	width: 70%;
+	background-color: rgb(255, 255, 255, 0.3);
+}
+#searchResult>table{
+	margin-right: 0px;
+	padding-left: 65px;
+}
+#searchResult>h2{
+	padding-left: 50px;
+}
+#searchResult td{
+	floatl: loft;
+	/* width: 150px;
+	height: 600px; */
+	text-align: center;
+}
+#searchArt{
+	--border: 1px solid black;
+	float: left;
+	margin: 10px;
+	--width: 100px;
+	--height: 100px;
+}
+#searchArt span{
+	display: inline-block;
+	text-align: center;
+}
+#wrapper{
+	width: 90%;
+	--height: 1000px;
+	--border: 1px solid black;
+	position: relative;
+	top: -100px;
+	left: 80px;
+}
+.cake-section{
+	margin-top: 120px;
+	height: 150px;
+}
+h3{
+	font-size: 25px;
+	background-color: pink;
+	padding-left: 50px;
+}
+.cake-section>section{
+	margin-left: 40px;
+	margin-top: 50px;
+	text-align: center;
+}
+.cake-article{
+	--border: 1px solid black;
+	width: 16%;
+	float: left;
+}
+
+

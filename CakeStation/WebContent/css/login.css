@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+main{
+	height: 550px;
+}
+
+#wrapper{
+	width: 600px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1{
+	font-weight: bolder;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 50px;
+}
+#login-box{
+	position: relative;
+	top:30px;
+	--border: 1px solid black;
+	margin: 0 auto;
+	width:456px;
+	height: 310px;
+	text-align:center;
+}
+.btn-section{
+	--border: 1px solid black;
+	
+}
+.choiceBtn{
+	--border: 1px solid black;
+	font-family: "NanumBarunpenB";
+	font-size: 25px;
+}
+.cust{
+/* 둥글게 */
+	width:49%;
+	height:60px;
+	--margin:0px;
+	border:0;
+	outline:0;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background-color: #fec5bb;
+}
+.shop{
+/* 둥글게 */
+	width:50%;
+	height:60px;
+	--margin:0px;
+	border:0;
+	outline:0;
+	border-radius: 5px;
+	background-color: white;
+	border: 3px solid #fec5bb;
+}
+
+.login{
+	border: 3px solid rgb(250, 225, 221);
+	height:50px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background-color: rgb(250, 225, 221);
+}
+.login-img{
+	--text-align: left;
+	display: block;
+	margin-left: 10px;
+	margin-top:2px;
+}
+.insert{
+	height: 96%;
+	width: 375px;
+	position: relative;
+	top: -47px;
+	right: -36px;
+	overflow: hidden;
+	border:0px solid #fec5bb;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px; 
+}
+.btn{
+	width:455px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #fcd5ce;
+	border:3px solid #fcd5ce;
+	font-family: "NanumBarunpenB";
+	font-size: 23px;
+}

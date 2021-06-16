@@ -1,0 +1,88 @@
+/* 폰트 적용 */
+
+*{padding: 0; margin: 0;}
+
+main {
+	width: 900px;
+	height: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content-box {
+	width: 550px;
+    height: auto;
+    float: right;
+    display: inline-block;
+}
+
+#sub-title {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#order-info{
+    height: 330px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+#img-zone{
+    width: 200px;
+    height: 250px;
+    float: left;
+    list-style: none;
+}
+
+#cake-img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid lightpink;
+}
+
+#info-zone{
+    width: 210px;
+    height: 250px;
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+}
+
+input[type=text]{
+    width: 200px;
+    height: auto;
+    border: 1px solid lightpink;
+}
+
+#pageNavi{
+    height: 30px;
+    width: inherit;
+	text-align: center;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#list-null {
+    margin-left: 20px;
+    margin-bottom: 150px;
+}
+
+#order-date {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#button {
+    width: 200px;
+    height: 23px;
+    border: 0;
+    background-color: white;
+    border: 1px solid pink;
+    color: lightcoral;
+    font-family: "NanumBarunpenB";
+}

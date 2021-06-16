@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+main{
+	height: 300px;
+}
+#wrapper{
+	width:70%;
+	--border :1px solid black;
+	margin: 0px auto ;
+	margin-top: 80px;
+}
+#find-box{
+	--border: 1px solid black;
+	width: 80%;
+	margin: 0px auto;
+	margin-top: 150px;
+	height: 330px;
+}
+.btn{
+	display: block;
+	margin: 0px auto;
+	--margin-top: 80px;
+	--border: 1px solid black;
+	border-radius: 5px;
+	width: 200px;
+	height: 50px;
+	position: relative;
+	top: 90px;
+	--left: 330px;
+	background-color: #fcd5ce;
+	border:3px solid #fcd5ce;
+	font-family: "NanumBarunpenB";
+	font-size: 22px;
+}
+#h2Id{
+	display: block;
+	width: 350px;
+	margin: 0px auto;
+	font-family: "NanumBarunpenB";
+	font-size: 30px;
+	--margin-left: 190px;
+	margin-top: 50px;
+}

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+main{
+	width: inherit;
+	height: 720px;
+}
+#wrapper{
+	width:70%;
+	--border :1px solid black;
+	margin: 0px auto ;
+	margin-top: 80px;
+}
+#wrapper>h1{
+	font-size: 40px;
+	margin-top: -30px;
+}
+#enroll-box{
+	border:1px solid black;
+	margin: 0px auto ;
+	margin-top: 10px;
+	width: 900px;
+	height: 480px;
+}
+#enroll-box>div{
+	border-bottom: 1px solid black;
+	padding-left: 55px;
+}
+h2{
+	font-size: 30px;
+}
+h3{
+	font-size: 20px;
+	margin: 0px;
+}
+.enroll-con{
+	float: left;
+	width:49%;
+	height: 392px;
+}
+.cust{
+	border-right: 1px solid black;
+}
+.enroll-con>h2{
+	position: relative;
+	top: 20px;
+	left:70px;
+}
+.enroll-con h3{
+	position: relative;
+	top: 15px;
+	left: 85px;
+}
+.enroll-con button{
+	position: relative;
+	top: 100px;
+	left: 170px;
+	width: 130px;
+	height: 70px;
+	border-radius: 5px;
+	border: 1px solid black;
+	background-color: #fcd5ce;
+	border:3px solid #fcd5ce;
+	font-family: "NanumBarunpenB";
+	font-size: 20px;
+}

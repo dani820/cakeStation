@@ -1,0 +1,137 @@
+@charset "UTF-8";
+*{padding: 0; margin: 0;}
+
+/* 폰트 적용 */
+@font-face{
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+@font-face{
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+div, article, section {
+    --border: 1px solid black;
+    box-sizing: border-box;
+}
+
+body {
+	background: "white";
+}
+
+main {
+	width: 1000px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	font-family: "NanumBarunpenR";
+	color:"#5E5E5E";
+}
+
+#product-list img {
+	border: 1px solid #c8c8c8;
+	padding: 3px;
+}
+
+input:focus {
+	outline:none;
+}
+
+input {
+	cursor: pointer;
+}
+
+input[type=submit] {
+	width:80px;
+	height: 30px;
+	background-color: #F06464;
+	color: white;
+	font-weight:bold;
+	font-size:15px;
+	font-family: "NanumBarunpenR";
+	border:0px;
+	border-radius:6px;
+	
+}
+
+input[type=reset] {
+	width:80px;
+	height: 30px;
+	background-color: #F06464;
+	color: white;
+	font-weight:bold;
+	font-size:15px;
+	font-family: "NanumBarunpenR";
+	border:0px;
+	border-radius:6px;
+	
+}
+
+input[type=button] {
+	width:90px;
+	height: 30px;
+	background-color: #F06464;
+	color: white;
+	font-weight:bold;
+	font-size:15px;
+	font-family: "NanumBarunpenR";
+	border:0px;
+	border-radius:6px;
+}
+
+#blank {
+	height:150px;
+	padding-top: 80px;
+	padding-left: 30px;
+}
+#search-bar {
+	height: 350px;
+	line-height: 2.5em;
+	padding-left: 20px;
+}
+
+#product-list {
+	height: auto;
+	padding: 0px 30px 0px 30px;
+}
+
+#radio-set {
+	height: 60%;
+	margin: 0px 30px 0px 30px;
+}
+#array-select {
+	height: 20%;
+	width: 40%;
+	margin: 0px 30px 0px 30px;
+	float:left;
+}
+#radio-set span {
+	font-weight: bold;
+}
+#submit-btn {
+	height: 20%;
+	margin: 0px 30px 0px 30px;
+}
+#allCake {
+	height: 20%;
+	margin: 0px 30px 0px 30px;
+	padding: 30px 0px 0px 800px;
+	align: right;
+	
+}
+
+#cake {
+	width: 100%;
+	height: auto;
+	text-align:center;
+	line-height: 1.5em;
+}
+#cake td {
+	width: 33%;
+}
+#array {
+	--height:1.5em;
+	width: 130px;
+}

@@ -1,0 +1,180 @@
+@charset "UTF-8";
+*{padding: 0; margin: 0;}
+
+/* 폰트 적용 */
+@font-face{
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+@font-face{
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+div, article, section {
+    --border: 1px solid black;
+    box-sizing: border-box;
+}
+
+body {
+	background: "white";
+}
+
+main {
+	width: 1000px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	font-family: "NanumBarunpenR";
+	color:"#5E5E5E";
+}
+
+#picture>img {
+	border: 1px solid #c8c8c8;
+	padding: 3px;
+}
+
+input:focus {
+	outline:none;
+
+}
+
+input {
+	cursor: pointer;
+}
+
+input[type=submit] {
+	width:80px;
+	height: 30px;
+	background-color: #F06464;
+	color: white;
+	font-weight:bold;
+	font-size:15px;
+	font-family: "NanumBarunpenR";
+	border:0px;
+	border-radius:6px;
+	
+}
+
+input[type=reset] {
+	width:80px;
+	height: 30px;
+	background-color: #F06464;
+	color: white;
+	font-weight:bold;
+	font-size:15px;
+	font-family: "NanumBarunpenR";
+	border:0px;
+	border-radius:6px;
+	
+}
+
+input[type=text] {
+	height: 25px;
+}
+
+select {
+	height :25px;
+}
+
+button {
+	width:80px;
+	height: 30px;
+	background-color: #F06464;
+	color: white;
+	font-weight:bold;
+	font-size:15px;
+	font-family: "NanumBarunpenR";
+	border:0px;
+	border-radius:6px;
+}
+
+#wrapper{
+	width:inherit;
+	padding-left: 110px;
+	padding-right: 110px;
+}
+#blank {
+	height: 100px;
+}
+#order-top {
+	height: 310px;
+}
+
+#picture {
+	float: left;
+	width: 50%;
+	height: inherit;
+	padding-top: 40px;
+	padding-left: 110px;
+}
+#contents {
+	float:left;
+	width: 50%;
+	height: inherit;
+}
+
+#contents {
+	padding-left: 50px;
+	padding-top: 85px;
+	padding-right: 110px;
+	font-size: 20px;
+	font-weigh: bold;
+	line-height: 1.5em;
+	letter-spacing: 1.5px;
+}
+
+#order-detail {
+	height: auto;
+	padding-top:30px;
+	line-height: 3em;
+	padding-left:150px;
+}
+
+#name-box {
+	height: 50px;
+}
+#order-detail span {
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	padding-right: 30px;
+}
+
+#pay-type {
+	height: 20%;
+	padding-left:150px;
+	line-height:2em;
+}
+
+#pay-Info {
+	padding-left:150px;
+	padding-top:30px;
+	display: none;
+}
+
+#pay-submit{
+	float: left;
+	width: 50%;
+	height: inherit;
+	padding-top:21px;
+	padding-left:250px;
+	padding-bottom: 30px;
+}
+#pay-reset{
+	float: left;
+	width: 50%;
+	height: inherit;
+	padding-left: 50px;
+}
+
+#request-text {
+	padding: 10px;
+	resize:none;
+}
+
+
+
+
+

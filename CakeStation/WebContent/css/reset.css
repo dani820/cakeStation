@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* 폰트 적용 */
+@font-face{
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+@font-face{
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}	
+
+/* -- 전체 리셋 */
+body{
+	margin: 0 auto;
+	font-family: "NanumBarunpenB";
+}
+
+/* -- 공통 */
+div{
+	/*border :1px solid black;*/
+	box-sizing : border-box;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+main {
+	margin-top: 20px;
+}
+

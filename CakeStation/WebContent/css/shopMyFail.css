@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+div, header, nav, section, aside, article, footer {
+	/*   border : 1px solid #6b705c; */
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+
+@font-face {
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+main {
+	width: 1200px;
+	height: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#shop-section {
+	width: 900px;;
+	height: 700px;
+	float: right;
+}
+
+/* 	본문 내용	 */
+.set-article {
+	width: 80%;
+	height: inherit;
+	float: left;
+}
+
+#list-title {
+	width: 100%;
+	height: 110px;
+	padding: 40px;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 10%;
+}
+
+h5 {
+	text-align: center;
+	margin-top: 30px;
+}
+

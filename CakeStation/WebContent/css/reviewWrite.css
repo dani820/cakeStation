@@ -1,0 +1,119 @@
+@charset "UTF-8";
+*{padding: 0; margin: 0;}
+
+/* 폰트 적용 */
+@font-face{
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+@font-face{
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+div, article, section {
+    --border: 1px solid black;
+    box-sizing: border-box;
+}
+
+body {
+	background: "white";
+}
+
+main {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	background-color: white;
+	font-family: "NanumBarunpenR";
+	color:"#5E5E5E";
+}
+
+#blank {
+	height: 50px;
+}
+
+#subject {
+	padding-left: 150px;
+	height: 80px;
+}
+
+#contens {
+	height: 600px;
+	width: 700px;
+	padding-top: 15px;
+	padding-left: 30px;
+	padding-right: 15px;
+	margin-left: 250px;
+	border: 1px solid black;
+}
+#cake-img {
+	margin-left: 50px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float:left;
+	border: 1px solid #c8c8c8;
+	padding: 3px;
+}
+#cake-detail {
+	margin-left: 50px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float:left;
+}
+select {
+	height: 30px;
+	width: 130px;
+	color: orange;
+}
+option {
+	color: orange;
+}
+#score {
+	padding-left: 500px;
+	margin-top: 150px;
+	margin-bottom: 10px;
+}
+#btn {
+	margin-top: 30px;
+	padding-left: 220px;
+}
+
+input[type=submit] {
+	width:80px;
+	height: 30px;
+	background-color: #F06464;
+	color: white;
+	font-weight:bold;
+	font-size:15px;
+	font-family: "NanumBarunpenR";
+	border:0px;
+	border-radius:6px;
+	
+}
+
+input[type=reset] {
+	width:80px;
+	height: 30px;
+	background-color: #F06464;
+	color: white;
+	font-weight:bold;
+	font-size:15px;
+	font-family: "NanumBarunpenR";
+	border:0px;
+	border-radius:6px;
+}
+
+p {
+	font-size:20px;
+	padding-bottom: 10px;
+}
+
+#review-text {
+	padding: 15px;
+	resize:none;
+	width: 600px;
+	height: 200px;
+}

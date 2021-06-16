@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/* 폰트 적용 */
+@font-face{
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+@font-face{
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+*{padding: 0; margin: 0;}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 180px;
+}
+
+header h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#hd-main {
+    height: 140px;
+    width: inherit;
+    background-color: white;
+}
+
+#hd-nav {
+    height: 20px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.hdlink{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#nav-main {
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    background-color: lightpink;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#nav-main li {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 18px;
+}
+
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.footer{
+    float: left;
+    height: inherit;
+    width: 33%;
+}
+
+footer section {
+    height: 120px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+#footer1 a {
+    margin-left: 80px;
+}
+
+#f-title {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.f-text{
+    font-size: 13px;
+}
+
+#f-mini{
+    font-size: 12px;
+}
+
+#footer2{
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 15px;
+}
+
+#footer3 a {
+    margin-left: 80px;
+}
+
+.f-nav{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.f-text2{
+    font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+    #nav-main li {
+        margin-left: 5%;
+        margin-right: 5%
+    }
+    
+    footer{
+     width: 850px;
+    }
+    
+    .footer{
+        float: left;
+        height: inherit;
+        width: 33%;
+    }
+}
+
+
+@media (max-width: 700px) {
+    #nav-main li {
+        margin-left: 3%;
+        margin-right: 3%
+    }
+}
+
+@media (max-width: 500px) {
+    #nav-main li {
+        margin-left: 2%;
+        margin-right: 2%
+    }
+}
+
+
+
+
+
+
+

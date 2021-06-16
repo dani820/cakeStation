@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+div, header, nav, section, aside, article, footer {
+	/* border : 1px solid #6b705c; */
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.otf"); /* 가는 글씨체 */
+}
+
+@font-face {
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.otf"); /* 굵은 글씨체 */
+}
+
+main {
+	width: 1150px;
+	height: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#shop-section {
+	width: 800px;;
+	height: 700px;
+	float: right;
+}
+
+/* 	본문 내용	
+	예약목록	 */
+
+#list-title {
+	width: 100%;
+	height: 110px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+#rList-con {
+	width: 800px;
+	height: 800px;
+	padding-top: 10px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.table {
+	width: 700px;
+	height: 430px;
+}
+
+.table td, tr {
+	text-align: center;
+}
+
+/* 	 		.pNavi {
+				width : 100%;
+				height : 50px;
+				text-align : center;
+				position : relative;
+			} */
+

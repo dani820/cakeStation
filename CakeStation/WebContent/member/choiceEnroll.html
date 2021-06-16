@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/css/choiceEroll.css">
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/headerfooter.css">
+<title>회원가입</title>
+</head>
+<body>
+	<!-- 헤더 -->
+	<header>
+		<section class="wrapper">		
+			<section id="header-user">
+				<a href="/board/list">고객센터</a>
+			</section>
+			<section id="header-logo">
+				<a href="/index.jsp"><img src="/img/cakestation_logo.png" id="logo-img"/></a>
+			</section>
+		</section>
+	</header>
+	
+	<!-- 네비 -->
+	<nav>
+		<ul>
+			<li><a href="/main.jsp">HOME</a></li>
+			<li><a href="/shop/list">매장</a></li>
+			<li><a href="/cake/list">케이크</a></li>
+			<li><a href="/member/map.html">내 주변 가게 찾기</a></li>
+			<li><a href="/index.jsp">마이페이지</a></li>
+		</ul>
+	</nav>
+	
+	<!-- 메인 -->
+	<main>
+		<section id="wrapper">
+			<h1>Cake Station에 오신 걸 환영합니다!</h1><br>
+			<section id="enroll-box">
+				<div>
+					<h2>회원가입 유형</h2>
+				</div>
+				<section>
+					<div class="enroll-con cust">
+						<h2>일반회원</h2>
+						<h3>만 14세 이상 가능</h3>
+						<button type="button" onclick="location.href='/member/customerEnroll.html'">회원가입</button>
+					</div>
+					<div class="enroll-con shop">
+						<h2>업체회원</h2>
+						<h3>사업자등록증을 보유한 회원</h3>
+						<button type="button" onclick="location.href='/member/shopEnroll.html'">회원가입</button>
+					</div>
+				</section>
+			</section>
+		</section>
+		
+	</main>
+	
+	<!-- 푸터 -->
+	<footer>
+		<section>
+	        <section class="footer" id="footer1">
+	            <a id="f-title">Cake Station Company</a><br>
+	            <a class="f-text">서울특별시 중구 남대문로1가 남대문로 120<br></a>
+	            <a class="f-text">(대일빌딩2,3층)</a><br>
+	            <a id="f-mini">사업자등록번호 123-12-12345</a>
+	        </section>
+	        <section class="footer" id="footer2">
+	          	<img src="/img/Instagram_logo.png" width="30" id="instar">
+	           	<a>인스타 문의 :cakestation@iei_kh</a>
+	        </section>
+	        <section class="footer" id="footer3">
+	          	<a href="/notice/list" class="f-nav">공지사항</a><br>
+	           	<a href="/board/list" class="f-nav">고객센터</a><br>
+	           	<a class="f-text2">영업시간 (월~금)09:00~18:00</a><br>
+	           	<a class="f-text2">점심시간 12:00~13:00</a><br>
+	           	<a class="f-text2">토,일(공휴일휴무)</a>
+	         </section>
+	    </section>
+	</footer>
+
+</body>
+</html>

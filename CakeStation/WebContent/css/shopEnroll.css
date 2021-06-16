@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+main{
+	height: 1300px;
+}
+#wrapper{
+	width:70%;
+	--border :1px solid black;
+	margin: 0px auto ;
+	margin-top: 80px;
+}
+#wrapper>h1{
+	font-size: 40px;
+	margin-top: -30px;
+	background-color: rgb(250, 225, 221);
+	--font-style: italic; 
+	padding-left: 30px;
+}
+#enroll-box{
+	--border: 1px solid black;
+	width: 80%;
+	margin: 0px auto;
+	margin-top: 40px;
+}
+#enroll-box h1{
+	font-size: 35px;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+#insert-1{
+	--border: 1px solid black;
+	width: 60%;
+	margin: 0px auto;
+}
+#insert-1 input{
+	border: 1px solid black;
+	border-radius: 5px;
+	height: 30px;
+	margin-bottom: 15px;
+}
+#checkBtn{
+	width: 120px;
+	background-color: #fcd5ce;
+	border:0px solid #fcd5ce;
+	font-family: "NanumBarunpenB";
+	font-size: 18px;
+}
+#file{
+	display:none;
+}
+#insert-1 label{
+	border: 1px solid black;
+	display: inline-block;
+	border-radius: 5px;
+	height: 30px;
+	width: 120px;
+	text-align: center;
+	line-height: 30px;
+	background-color: #fcd5ce;
+	border:3px solid #fcd5ce;
+	font-family: "NanumBarunpenB";
+	font-size: 18px;
+}
+.insert{
+	width: 250px;
+	margin-left: 70px;
+}
+#insert-1 div{
+	margin-left: 70px;
+}
+#insert-2{
+	width: 50%;
+	margin: 0px auto;
+	font-size: 19px;
+	line-height: 35px;
+}
+#checkAll{
+	width: 18px;
+	height: 18px;
+}
+.btn{
+	margin-top: 50px;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 200px;
+	height: 50px;
+	background-color: #fcd5ce;
+	border:3px solid #fcd5ce;
+	font-family: "NanumBarunpenB";
+	font-size: 20px;
+}
+.regist{
+	margin-left: 200px;
+}

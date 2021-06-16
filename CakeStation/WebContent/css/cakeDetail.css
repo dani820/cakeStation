@@ -1,0 +1,184 @@
+@charset "UTF-8";
+*{padding: 0; margin: 0;}
+
+/* 폰트 적용 */
+@font-face{
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+@font-face{
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+div, article, section {
+    --border: 1px solid black;
+    box-sizing: border-box;
+}
+
+body {
+	background: "white";
+}
+
+main {
+	width: 1000px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	font-family: "NanumBarunpenR";
+	color:"#5E5E5E";
+}
+
+#subject-left>img {
+	border: 1px solid #c8c8c8;
+	padding: 3px;
+}
+
+#order-btn {
+	padding-left: 130px;
+	padding-top: 30px;
+}
+
+input:focus {
+	outline:none;
+
+}
+
+input {
+	cursor: pointer;
+}
+
+input[type=submit] {
+	width:80px;
+	height: 30px;
+	background-color: #F06464;
+	color: white;
+	font-weight:bold;
+	font-size:15px;
+	font-family: "NanumBarunpenR";
+	border:0px;
+	border-radius:6px;
+	
+}
+
+input[type=button] {
+	width:80px;
+	height: 30px;
+	background-color: #F06464;
+	color: white;
+	font-weight:bold;
+	font-size:15px;
+	font-family: "NanumBarunpenR";
+	border:0px;
+	border-radius:6px;
+}
+
+#blank {
+	height: 150px;
+}
+#subject {
+	height: 400px;
+}
+#subject-left {
+	height: inherit;
+	float: left;
+	width: 50%;
+	padding-left: 12%;
+}
+#subject-right {
+	height: inherit;
+	float: left;
+	width: 50%;
+	padding-left: 30px;
+	padding-top: 30px;
+	line-height: 2em;
+}
+
+#cake-info1 {
+	font-size: 30px;
+}
+#cake-info {
+	padding-left: 250px;
+	padding-right: 110px;
+	font-size: 20px;
+	font-weigh: bold;
+	text-align: right;
+}
+#cake-info3 {
+	font-size: 18px;
+}
+#cake-info4 {
+	font-size: 18px;
+}
+#cake-info5 {
+	font-size: 18px;
+}
+
+#order-select {
+	font-size: 18px;
+	line-height: 2em;
+	padding-left: 30px;
+}
+
+#contents {
+	height: auto;
+	padding: 50px 50px;
+	min-height: 400px;
+}
+
+#cake-contents {
+	white-space: pre;
+}
+
+#cake-contents p {
+	font-size:27px;
+	font-weight:bold;
+}
+
+#cake-contents span {
+	font-size:20px;
+}
+
+#cakePR {
+	padding-left:15px;
+}
+#cakedetail-review {
+	align:left;
+}
+
+#review-btn {
+	padding-left:800px;
+}
+
+#review {
+	height: 500;
+	min-heigt: 100px;
+	padding: 30px 50px;
+}
+#review p {
+	font-size:27px;
+	font-weight:bold;
+}
+#reivew-contents {
+	padding-left: 50px;
+	height: 380px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+::-webkit-scrollbar{
+	display:none;
+}
+
+#review-board {
+	font-size: 20px;
+	line-height: 2em;
+	width: 800px;
+	text-align: left;
+	height: auto;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+

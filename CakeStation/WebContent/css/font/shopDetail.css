@@ -1,0 +1,178 @@
+@charset "UTF-8";
+*{padding: 0; margin: 0;}
+
+/* 폰트 적용 */
+@font-face{
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+@font-face{
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+div, article, section {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+
+body {
+	background: "white";
+}
+
+main {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	font-family: "NanumBarunpenR";
+	color:"#5E5E5E";
+}
+
+ul {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+#blank {
+	height: 100px;
+}
+
+#subject {
+	height: 400px;	
+}
+#shopOV{
+	heigh: 300px;
+}
+#shop-img{
+	width:50%;
+	float:left;
+	padding-left:150px;
+}
+#shop-name{
+	top:0;
+	width:50%;
+	height:260px;
+	padding-top: 50px;
+	padding-left: 30px;
+	float:left;
+	font-size: 40px;
+    font-weight: bold; 
+}
+
+#score {
+	margin-top: 20px;
+}
+
+#avg {
+	font-size: 30px;
+}
+
+#navi>ul>li {
+        height: inherit;
+        width: 33%;
+        padding: 60px 8px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 25px;
+        float: left;
+        margin-top:50px;
+        font-weight: bold;
+    }
+
+#shop-detail {
+	position: relative;
+	height: inherit;
+}
+#introduce{
+ 	position:relative;
+ 	margine:50px;
+ 	height: 400px;
+}
+
+#detail-introduce {
+	float: left;
+	width: 65%;
+	height: inherit;
+	padding-left: 85px;
+	padding-top: 50px;
+}
+
+#detail-introduce>p {
+	font-size:25px;
+}
+
+#detail-1 {
+	height: 50%;	
+}
+#detail-2 {
+	height: 50%;
+	line-height:2em;
+}
+
+#shop-info {
+	width:500px;
+}
+#detail-map {
+	padding-top: 15px;
+	padding-left: 50px;
+	height: inherit;
+}
+
+#shop-cakelist {
+	height:400px;
+	align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 50px;
+}
+
+#cake-list span {
+	font-size: 20px;
+}
+.content {
+	align: center;
+	height: 100%;
+	width: 100%;
+}
+
+#more-btn {
+	text-align: center;
+	width: 100%;
+	height: 80px;
+	padding: 20px 300px 20px 300px;
+}
+
+#cake-list {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#more-btn span {
+	font-size: 20px;
+}
+
+.content h1 {
+	font-size: 25px;
+}
+
+#review-board {
+	font-size: 20px;
+	line-height: 2em;
+	width: 50%;
+	text-align: left;
+	
+}
+
+#review-content {
+	padding-left: 85px;
+	height: 100%;
+}
+
+/*
+
+ #subject {
+	position: fixed;
+
+}  */

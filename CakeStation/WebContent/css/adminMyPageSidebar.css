@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*{padding: 0; margin: 0;}
+
+aside {
+    height: 450px;
+    width: 250px;
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    box-sizing: border-box;
+    background-color: #e8e8e4;
+}
+
+aside ul {
+	width: 250px;
+	height: auto;
+	background-color: #e8e8e4;
+	list-style-type: none;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+aside ul li a {
+	color: #6E6E6E;
+}
+
+.aside1{
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "NanumBarunpenB";
+    width: 250px;
+}
+
+.aside2{
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: normal;
+    text-align: center;
+    width: 250px;
+}
+

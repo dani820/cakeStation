@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+div, header, nav, section, aside, article, footer {
+	/* border : 1px solid #6b705c; */
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+
+@font-face {
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+main {
+	width: 1000px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#shop-section {
+	width: 600px;;
+	height: 700px;
+	float: right;
+}
+
+/* 	본문 내용	 */
+#list-title {
+	width: 100%;
+	height: 110px;
+	padding: 40px;
+}
+
+#withdraw-con {
+	width: 500px;
+	height: 500px;
+	padding-top: 10px;
+}
+
+#out-con {
+	width: 400px;
+	height: 300px;
+	border: 1px solid #e8e8e4;
+	border-radius: 5px;
+	padding: 2em;
+}
+
+#out-top {
+	height: 200px;
+}
+
+#buttons {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+/* 푸터 */
+footer {
+	background-color: rgb(236, 236, 254);
+	height: 150px;
+}
+
+.footer-layer {
+	float: left;
+	width: 33%;
+}
+
+#footer-lay1 {
+	line-height: 10px;
+	position: relative;
+	left: 70px;
+	top: 20px;
+	text-align: left;
+	height: 100px;
+}
+
+#footer-lay1 button {
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	position: relative;
+	top: -30px;
+	left: 230px;
+}
+
+#footer-lay2 {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	text-align: center;
+	height: inherit;
+}
+
+#footer-lay2 img {
+	position: relative;
+	top: 70px;
+	left: -130px;
+}
+
+#footer-lay2 p {
+	font-size: 20px;
+	position: relative;
+	top: 15px;
+	left: 20px;
+}
+
+#footer-lay3 {
+	line-height: 8px;
+	height: inherit;
+	position: relative;
+	left: 80px;
+	width: 350px;
+	height: 110px;
+	top: 10px;
+	text-align: left;
+}
+
+.footer-bold {
+	font-size: 20px;
+	font-weight: bold;
+}

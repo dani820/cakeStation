@@ -1,0 +1,203 @@
+@charset "UTF-8";
+*{padding: 0; margin: 0;}
+
+/* 폰트 적용 */
+@font-face{
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+@font-face{
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+div, article, section {
+    --border: 1px solid black;
+    box-sizing: border-box;
+}
+
+body {
+	background: "white";
+}
+
+main {
+	width: 1000px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	font-family: "NanumBarunpenR";
+	color:"#5E5E5E";
+}
+
+ul {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+#blank {
+	height: 100px;
+}
+
+#subject {
+	height: 400px;	
+}
+#shopOV{
+	heigh: 300px;
+}
+#shop-img{
+	width:50%;
+	float:left;
+	padding-left:150px;
+}
+#shop-name{
+	top:0;
+	width:50%;
+	height:260px;
+	padding-top: 50px;
+	padding-left: 30px;
+	float:left;
+	font-size: 40px;
+    font-weight: bold; 
+}
+
+#score {
+	margin-top: 20px;
+}
+
+#avg {
+	font-size: 30px;
+}
+
+#navi>ul>li {
+        height: inherit;
+        width: 33%;
+        padding: 65px 8px 30px 8px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 25px;
+        float: left;
+        font-weight: bold;
+    }
+
+#shop-detail {
+	position: relative;
+	height: inherit;
+}
+#introduce{
+ 	position:relative;
+ 	margine:50px;
+ 	height: 500px;
+}
+
+#detail-introduce {
+	float: left;
+	width: 65%;
+	height: auto;
+	padding-left: 85px;
+	padding-top: 50px;
+	padding-right: 85px;
+	paddint-bottm:30px;
+}
+
+#detail-introduce>p {
+	font-size:25px;
+}
+
+#detail-1 {
+	height: auto;
+	min-height: 250px;
+	white-space: normal;
+}
+#detail-2 {
+	padding-top:30px;
+	height: auto;
+	line-height:2em;
+}
+
+#shop-info {
+	width:500px;
+}
+#detail-map {
+	padding-top: 55px;
+	padding-left: 50px;
+	height: auto;
+}
+
+#shop-cakelist {
+	height:auto;
+	align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#shop-cakelist img {
+	border: 0.5px solid #c8c8c8;
+	padding: 3px;
+}
+
+#cake-list span {
+	font-size: 20px;
+}
+.content1 {
+	align: center;
+	height: auto;
+}
+
+#more-btn {
+	text-align: center;
+	width: 100%;
+	height: 80px;
+	padding: 20px 300px 20px 300px;
+}
+
+#cake-list {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+#cake-list td {
+	width: 25%
+}
+
+#more-btn span {
+	font-size: 20px;
+}
+
+.content h1 {
+	font-size: 25px;
+}
+#review {
+	height: 500px;
+	padding-top: 50px;
+}
+#review-board {
+	font-size: 20px;
+	line-height: 2em;
+	width: 800px;
+	text-align: left;
+	height: auto;
+}
+#review-subject {
+	padding-left:70px;
+	font-size: 23px;
+}
+#review-content {
+	padding-left: 90px;
+	height: 400px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+::-webkit-scrollbar{
+	display:none;
+}
+
+
+/*
+
+ #subject {
+	position: fixed;
+
+}  */

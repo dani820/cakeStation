@@ -1,0 +1,277 @@
+@charset "UTF-8";
+div, header, nav, section, aside, article, footer {
+     /* border : 1px solid #6b705c ; */
+    box-sizing: border-box;
+}
+
+@font-face{
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.otf"); /* 가는 글씨체 */
+}
+@font-face{
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.otf"); /* 굵은 글씨체 */
+}
+
+/* 헤더 */
+#header-user{
+	background-color:whight;
+	text-align: right;
+	height: 30px;
+	line-height : 30px;
+	background-color: rgb(250, 225, 221);
+}
+#header-logo{
+	background-color:whight;
+	height : 100px;
+}
+
+nav {
+	width : 100%;
+	height : 50px;
+	background-color: rgb(250, 225, 221);
+}
+
+
+/* 헤더 및 네비 끝----------------------- */
+/* 본문 시작 */
+
+
+#shop-section {
+	width : 100%;
+	height : 2700px;
+	/* height : auto; */
+	/* min-height : 1100px; */
+}
+
+	#side-bar {
+		width : 20%;
+		height : 650px;
+		float : left;
+		background : #e8e8e4;
+	}
+	
+	span {
+		text-align : center;
+	}
+	
+	.shop-set {
+		width : 100%;
+		list-style-type : none;
+		padding : 0;
+		padding-down : 10px;
+		text-align : center;
+	}
+
+	h6 {
+		text-align : center;
+		padding-top : 40px;
+	}
+	
+	.sets {
+		width: 100%;
+		list-style-type : none;
+		padding-down : 10px;
+	}
+	
+	.sets a {
+		color : rgb(108, 117, 125);
+	}
+	
+
+/* 	본문 내용	
+	예약목록	 */
+ 	.set-article {
+		width : 80%;
+		height : 2400px;
+		/* min-height : 900px; */
+		float : left;
+	}
+	
+ 		#list-title {
+			width : 100%;
+			height : 110px;
+			padding : 40px;
+		}
+		
+  		#rList-con {
+			width : 100%;
+			height : 95%;
+			/* height : auto; */
+			min-height : 800px;
+			padding-top : 30px;
+			padding-left : 10%;
+			padding-right : 10%;
+		}
+		
+		#review {
+		    width : 700px;
+		    height : auto;
+		    min-height : 320px;
+		    text-align : center;
+		    border: 1px solid #e8e8e4;
+			/* border-radius : 5px; */
+		}
+
+	    .line-one { 
+	        width : 700px;
+	        height: 50px;
+	        text-align : center;
+	        padding-top : 8px;
+	        border-bottom : 1px solid #f8edeb;
+	    	background : #fae1dd;
+			/* border-radius : 8px; */
+	    }
+	    
+	    .line-two {
+	    	width : 100%;
+	    	height : auto;
+	    	min-height : 50px;
+	        padding-top : 15px;
+	        border-bottom : 1px solid #e8e8e4;
+	    	
+	    }
+	    
+   	    .line-three {
+	    	width : 700px;
+	        height: 50px;
+	        text-align : center;
+	        border-bottom : 1px solid #e8e8e4;
+	    }
+
+		.enrollTitle {
+	        line-height : 50px;
+	    	background : #e8e8e4;
+		}
+		
+		.enrollReply textarea {
+			margin-top : 10px;
+			width : 700px;
+			height : 100px;
+			padding : 10px;
+		}
+	    
+   	    .line-four {
+	    	width : 700px;
+	        height: 50px;
+	        text-align : center;
+	    }
+	    
+	    .writerValue {
+	    	width : 40%; /* 70%; */
+	        float : left;
+	    }
+
+	    .scoreValue {
+	    	width : 30%;
+	    	float : left;
+	    }
+	    
+	    .dateValue {
+	    	width : 30%; /* 70%; */
+	        float : left;
+	    }
+	    
+	    .reviewText {
+	    	width : 100%;
+	    	text-align : left;
+	    	padding-left : 20px;
+	    	padding-right : 20px;
+	    }	    
+	    
+	    .reply {
+	    	background : #e8e8e4;
+	    	line-height : 50px;
+	    }
+	    
+	    .replyTitle {
+	    	width : 50%;
+	    	float : left;
+	    	background : #e8e8e4;
+	    }
+	    
+	    .prevReplyDValue {
+	    	width : 50%;
+	    	float : left;
+	    	background : #e8e8e4;
+	    }
+	    
+	    .prevReply {
+	    	width : 100%;
+	    	height : auto;
+	    	min-hight : 50px;
+	    	line-height : 50px;
+	    } 
+	    
+	    .prevReplyCon {
+	    	width : 100%;
+	    	height : auto;
+	    	min-height : 50px;
+	    	text-align : left;
+	    	padding-left : 20px;
+	    	padding-right : 20px;
+	    }
+	    
+	
+		.btn-primary, .btn-danger {
+			margin-top : 5px;
+		}		
+		
+		
+		
+		/* 푸터 */
+footer{
+ 	background-color:rgb(236, 236, 254);
+ 	height: 150px;
+}
+	.footer-layer{
+		float: left;
+		width: 33%;
+	 }
+	 #footer-lay1{
+	 	line-height: 10px;
+	 	position:relative;
+	 	left: 70px;
+	 	top: 20px;
+	  	text-align: left;
+	 	height: 100px;
+	 }
+		 #footer-lay1 button{
+		 	background-color: black;
+		 	color : white;
+		 	border-radius: 10px;
+		 	position: relative;
+		 	top: -30px;
+		 	left: 230px;
+		 }
+	 #footer-lay2{
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+	 	text-align: center;
+	 	height: inherit;
+	 }
+		 #footer-lay2 img{
+		 	position: relative;
+		 	top: 70px;
+		 	left: -130px;
+		 }
+		 #footer-lay2 p{
+		 	font-size:20px;
+		 	position: relative;
+		 	top: 15px;
+		 	left: 20px;
+		 }
+	 #footer-lay3{
+	 	line-height: 8px;
+	  	height: inherit;
+	  	position:relative;
+	 	left: 80px;
+	 	width: 350px;
+	 	height: 110px;
+	 	top: 10px;
+	 	text-align:left;
+	 }
+		.footer-bold{
+		 	font-size:20px;
+		 	font-weight: bold;
+		 }

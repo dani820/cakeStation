@@ -1,0 +1,58 @@
+*{padding: 0; margin: 0;}
+
+main {
+    width: 950px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content-box {
+    width: 600px;
+    height: 750px;;
+    float: right;
+    display: inline-block;
+}
+
+#sub-title {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#info-box {
+	margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 500px;
+    border: 1px solid #e8e8e4;
+	border-radius : 5px;
+	padding: 2em;
+}
+
+#delete-box {
+    height: auto;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    border: 1px solid #e8e8e4;
+	border-radius : 5px;
+	padding: 2em;
+}
+
+#btn-zone {
+    width : 100%;
+	height : 50px;
+	text-align : center;
+}
+
+#btn {
+    text-align: right;
+}
+
+section form ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+

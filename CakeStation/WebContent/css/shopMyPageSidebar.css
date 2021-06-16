@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+	#side-bar {
+		width : 250px;
+		height : 650px;
+		float : left;
+		background : #e8e8e4;
+	}
+	
+	span {
+		text-align : center;
+	}
+	
+	.shop-set {
+		width : 100%;
+		list-style-type : none;
+		padding : 0;
+		padding-down : 10px;
+		text-align : center;
+	}
+
+	h6 {
+		text-align : center;
+		padding-top : 40px;
+	}
+	
+	.sets {
+		width: 100%;
+		list-style-type : none;
+		padding-down : 10px;
+	}
+	
+	.sets a {
+		color : rgb(108, 117, 125);
+	}

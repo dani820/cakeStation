@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*
+div, header, nav, section, aside, article, footer {
+     border : 1px solid #6b705c;
+    box-sizing: border-box;
+}
+*/
+@font-face {
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.otf"); /* 가는 글씨체 */
+}
+
+@font-face {
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.otf"); /* 굵은 글씨체 */
+}
+
+/* 헤더 및 네비 끝----------------------- */
+/* 본문 시작 */
+main {
+	width: 1200px;
+	height: 2500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#shop-section {
+	width: 800px;
+	height: auto;
+	float: right;
+}
+
+/* 	본문 내용	
+	예약목록	 */
+	
+.set-article {
+	width: 80%;
+	height: ;
+	float: left;
+}
+
+#list-title {
+	width: 100%;
+	height: 110px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#oList-con {
+	width: 100%;
+	height: 95%;
+}
+
+.orders {
+	width: inherit;
+	height: 430px;
+	/* border-top : 1px solid #6b705c */;
+	border-bottom: 1px solid #6b705c;
+}
+
+.order-chat {
+	width: 100%;
+	height: 50px;
+}
+
+.order-chat img {
+	width: 50px;
+	height: 50px float: right;
+}
+
+.order-chat span {
+	text-align: right;
+}
+
+.order-date {
+	width: inherit;
+	height: 50px;
+	padding: 10px;
+}
+
+.olist-left {
+	width: 40%;
+	height: 380px;
+	float: left;
+	/* background : green; */
+}
+
+.olist-left-top {
+	width: 250px;
+	height: 250px;
+	text-align: center;
+}
+
+.img-thumbnail {
+	margin-top: 5%;
+}
+
+.olist-left-down {
+	width: 200px;
+	height: 80px;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.olist-right {
+	width: 60%;
+	height: 300px;
+	padding: 10px;
+	padding-left: 30px;
+	float: left;
+	/* background : yellow; */
+}
+
+.pNavi {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	/* position : relative; */
+}
+
+input[type=text] {
+	width: 300px;
+	height: 100px;
+}

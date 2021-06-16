@@ -1,0 +1,37 @@
+*{padding: 0; margin: 0;}
+
+main {
+    width: 1090px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content-box {
+    height: 500px;
+    width: 800px;
+    float: right;
+    display: inline-block;
+    background-color: white;
+}
+
+#sub-title {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#adminP-table {
+    margin-left: 40px;
+    width: 600px;
+    text-align: center;
+}
+
+#list-null {
+	margin-left: 40px;
+}
+
+form li {
+	list-style: none;
+}
+

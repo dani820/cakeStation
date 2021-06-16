@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+div, header, nav, section, aside, article, footer {
+	/* border : 1px solid #6b705c; */
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+
+@font-face {
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+main {
+	width: 1100px;
+	height: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#shop-section {
+	width: 700px;
+	height: 1000px;
+	float: right;
+}
+
+
+/* 	본문 내용	 */
+#list-title {
+	width: 100%;
+	height: 110px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#sInfo-con {
+	width: 1030px;
+	height: 1000px;
+}
+
+#shop-detail {
+	width: 600px;
+	height: 1300px;
+	border: 1px solid #e8e8e4;
+	border-radius: 5px;
+	padding: 2em;
+}
+
+#shop-img-thumbnail {
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#shop-img-link {
+	width: 100%;
+	height: 50px;
+	text-align: right;
+	background: #e8e8e4;
+}
+
+#shop-introduce {
+	width: 80%;
+	height: 900px;
+	padding: 30px;
+	margin: auto;
+}
+
+.shop-buttons {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+.pNavi {
+	width: 100%;
+	height: 50px;
+	background: red;
+}
+

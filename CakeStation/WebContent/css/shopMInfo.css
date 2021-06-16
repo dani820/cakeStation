@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+div, header, nav, section, aside, article, footer {
+	/* border : 1px solid #6b705c; */
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+
+@font-face {
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+main {
+	width: 1200px;
+	height: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+span {
+	text-align: center;
+}
+
+/* 	본문 내용	 */
+#shop-section {
+	width: 800px;;
+	height: 1200px;
+	float: right;
+}
+
+#list-title {
+	width: 100%;
+	height: 110px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#shop-con {
+	width: 600px;
+	height: 1150px;
+}
+
+#shop-info-con {
+	border: 1px solid #e8e8e4;
+	border-radius: 5px;
+	padding: 2em;
+}
+
+#sMem-Info {
+	width: 100%;
+	height: inherit;
+}
+
+#buttons {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+.pNavi {
+	width: 100%;
+	height: 50px;
+	background: red;
+}
+

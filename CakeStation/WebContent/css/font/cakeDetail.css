@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* 폰트 적용 */
+@font-face{
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+@font-face{
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+body {
+	background: "white";
+
+}
+
+main {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	font-family: "NanumBarunpenR";
+}
+	#wrapper {
+		width: 60%;
+	}
+	#subject-right {
+		width: 50%;
+		display: inlin-block;
+	}
+
+	#subject-left {
+		width: 50%;
+		display: inlin-block;
+	}
+	
+h1 {
+	font-family: "NanumBarunpenR";
+	font-size: 30px;
+}	

@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+div, header, nav, section, aside, article, footer {
+	/* border : 1px solid #6b705c; */
+	box-sizing: border-box;
+}
+
+*{margin: 0; padding: 0;}
+
+@font-face {
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+
+@font-face {
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}
+
+main {
+	width: 1300px;
+	height: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#shop-section {
+	width: 1000px;;
+	height: 1200px;
+	float: right;
+}
+
+/* 	본문 내용	 */
+#list-title {
+	width: 100%;
+	height: 110px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#cList-con {
+	width: 1030px;
+	height: 1000px;
+}
+
+#cake-all {
+	width: 1030px;
+	height: 1050px;
+	border: 1px solid #e8e8e4;
+	border-radius: 5px;
+	padding: 2em;
+}
+
+#cake-top {
+	width: 900px;
+	height: 50px;
+	text-align: left;
+	margin: 0;
+}
+
+#cake-bottom {
+	width: 240px;
+	height: 850px;
+	float: left;
+	border: 1px solid #e8e8e4;
+	border-radius: 5px;
+}
+
+#cake-pic {
+	width: 240px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+#cake-con {
+	width: 250px;
+	height: 500px;
+	float: left;
+	padding-left: 10px;
+	/* background : green; */
+}
+
+#cake-buttons {
+	width: 250px;
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#cake-navi {
+	width: 1030px;
+	height: 40px;
+	text-align: center;
+	float: left;
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+#cake_char {
+	width: 250px;
+	/* height : 190px; */
+	max-height: 12;
+	line-height: 1.5;
+	overflow: hidden;
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-line-clamp: 8;
+	-webkit-box-orient: vertical;
+	padding-right: 20px;
+
+	/* overflow:hidden : 지정 넓이 넒어서는 내용에 대해서는 보이지 않게 처리함
+						   text-overflow:ellipsis : 글자가 지정 넓이를 넘을 경우 생략부호를 표시함
+						   white-space:nowrap : 공백문자가 있는 경우 줄바꿈하지 않고 한줄로 나오게 처리함 (\A로 줄바꿈가능) */
+}
+
+.btn-info {
+	margin-bottom: 10px;
+}
+
+#cake-navi {
+	width: 1070px;
+	height: 60px;
+	text-align: center;
+	/* padding-right : 180px; */
+}

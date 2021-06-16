@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<link rel="stylesheet" type="text/css" href="/css/shopEnroll.css">
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" href="/css/headerfooter.css">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+
+		/* 약관 전체 체크
+		$("#checkAll").click(function(){
+			if($("#checkAll").prop("checked")){
+				$("input[name=recieve]").prop("checked", true);
+			}else{
+				$("input[name=recieve]").prop("checked", false);
+			}
+		}) */
+		/* 약관 단일 체크 해제 시 전체 체크 해제 */
+		
+		/* 가입 버튼 클릭시 */
+		$("#submitBtn").click(function(){
+			if($("input[name=user-id]").val()==""){
+				alert("아이디를 입력하세요!");
+				return false;
+			}else if($("input[name=user-pwd]").val()=="" || $("input[name=user-pwd-re]").val()==""){
+				alert("비밀번호를 입력하세요!");
+				return false;
+			}else if($("input[name=user-shop-name]").val()==""){
+				alert("상호명을 입력하세요!");
+				return false;
+			}else if($("input[name=user-name]").val()==""){
+				alert("대표자 이름을 입력하세요!");
+				return false;
+			}else if($("input[name=user-crn]").val()==""){
+				alert("사업자등록증을 첨부하세요!");
+				return false;
+			}else if
+			($("input[name=user-phone1]").val()=="" || $("input[name=user-phone2]").val()=="" || $("input[name=user-phone3]").val()==""){
+				alert("전화번호를 입력하세요!");
+				return false;
+			}else if
+			($("input[name=email-id]").val()=="" || $("input[name=email-domain]").val()==""){
+				alert("이메일을 입력하세요!");
+				return false;
+			}else if
+			($("input[name=user-L-add]").val()=="" || $("input[name=user-M-add]").val()=="" || $("input[name=user-S-add]").val()==""){
+				alert("주소를 입력하세요!");
+				return false;
+			}
+			
+			// 약관 전체 체크
+			if($("#checkAll").is(":checked")==true){
+				return true;
+			}else{
+				alert("약관 동의 여부를 확인해주세요.");
+				return false;
+			}
+		});
+		
+		/* 약관 전체/단일 체크 */
+		$("[type=checkbox][name=recieve]").on("change", function(){
+			var check = $(this).prop("checked");
+			// 전체 체크
+			if($(this).hasClass("allcheck")){
+				$("[type=checkbox][name=recieve]").prop("checked", check);
+				
+			// 단일 체크	
+			}else{
+				var all = $("[type=checkbox][name=recieve].allcheck");
+				var allcheck = all.prop("checked");
+				if(check != allcheck){
+					var len = $("[type=checkbox][name=recieve]").not(".allcheck").length;
+					var ckLen = $("[type=checkbox][name=recieve]:checked").not(".allcheck").length;
+					if(len === ckLen){
+						all.prop("checked", true);
+					}else{
+						all.prop("checked", false)
+					}
+				}
+			}
+			
+		});
+		
+		
+		/* 이메일 도메인 선택 */
+		$("#domain-select").change(function(){
+			if($("#domain-select").val() == 1) {
+				$("input[name=email-domain]").val("");
+                $("input[name=email-domain]").focus();
+			}else{
+				$("input[name=email-domain]").val($("#domain-select").val())
+			}
+		});
+			
+		$("#file").on('change', function(){
+			var fileName = $("#file").val();
+			$(".inputCrn").val(fileName);
+		});
+			
+	});
+
+	// 아이디 중복확인 버튼 클릭 시 화면 open
+	function openIdChk() {
+		//새창 만들기 
+		window.open("shopIdCheckForm.jsp", "idwin", "width=550, height=400");
+	}
+
+	/*
+	function checkAll(checkAll){
+		const checkboxes = document.getElementsByName("recieve");
+		checkboxes.forEach((checkbox => {
+			checkbox.checked = checkAll.check;
+		}))
+	}
+	*/
+</script>
+</head>
+<body>
+<script>
+	/* 비밀번호 일치 */
+	function checkPwd(){
+		var pwd = document.getElementById("user-pwd").value;
+		var rePwd = document.getElementById("user-pwd-re").value;
+		console.log(pwd); console.log(rePwd); console.log(document.getElementById("pwdCheck"));
+		if(pwd!=rePwd){
+			document.getElementById("pwdCheck").style.color = "red";
+			document.getElementById("pwdCheck").innerHTML = "비밀번호가 일치하지 않습니다.";
+		}else{
+			document.getElementById("pwdCheck").style.color = "blue";
+			document.getElementById("pwdCheck").innerHTML = "비밀번호가 일치합니다.";
+		}
+	}
+</script>
+
+	<!-- 헤더 -->
+	<header>
+		<section class="wrapper">		
+			<section id="header-user">
+				<a href="/board/list">고객센터</a>
+			</section>
+			<section id="header-logo">
+				<a href="/index.jsp"><img src="/img/cakestation_logo.png" id="logo-img"/></a>
+			</section>
+		</section>
+	</header>
+	
+	<!-- 네비 -->
+	<nav>
+		<ul>
+			<li><a href="/main.jsp">HOME</a></li>
+			<li><a href="/shop/list">매장</a></li>
+			<li><a href="/cake/list">케이크</a></li>
+			<li><a href="/member/map.html">내 주변 가게 찾기</a></li>
+			<li><a href="/index.jsp">마이페이지</a></li>
+		</ul>
+	</nav>
+
+
+	<!-- 메인 -->
+	<main>
+
+		<section id="wrapper">
+			<h1>Cake Station 업체 회원가입</h1>
+			
+			<section id="enroll-box">
+				<h1>정보 입력</h1>
+				
+				<form action="/shop/enroll" method="post" enctype="multipart/form-data">
+				
+				<section id="insert-1">
+					<input type="text" class="insert" name="user-id" placeholder="아이디"> &nbsp;&nbsp;
+					<input type="button" onclick="openIdChk()" id="checkBtn" value="중복확인"><br>
+					<input type="password" id="user-pwd" name="user-pwd" class="insert" placeholder="비밀번호"><br>
+					<input type="password" id="user-pwd-re" name="user-pwd-re" onkeyup="checkPwd()" class="insert" placeholder="비밀번호 확인">
+					<div id="pwdCheck"></div><br>
+					<input type="text" name="user-shop-name" class="insert" placeholder="상호명"><br>
+					<input type="text" name="user-name" class="insert" placeholder="대표자 이름"><br>
+					<input placeholder="사업자등록증 첨부" readonly="readonly" class="insert inputCrn"/>&nbsp;&nbsp;
+					<label for="file">첨부파일</label>
+					<input type="file" name="SHOP_CRN" id="file"/><br>
+					<div>
+					<select name="user-phone1">
+						<option>02</option>
+						<option selected>010</option>
+						<option>011</option>
+						<option>016</option>
+						<option>017</option>
+						<option>018</option>
+						<option>031</option>
+					</select>
+					- <input type="tel" size="8" name="user-phone2"> 
+					- <input type="tel" size="8" name="user-phone3"><br> <!-- 타입 수정 -->
+					</div>
+					<div>
+						<input type="text" name="email-id" size="13" placeholder="이메일"> @ <input type="text" name="email-domain" size="13" placeholder="직접 작성"> &nbsp;&nbsp;
+						<select id="domain-select">
+							<option value="1">직접입력</option>
+							<option value="naver.com">naver.com</option>
+							<option value="gmail.com">gmail.com</option>
+							<option value="hanmail.com">hanmail.com</option>
+							<option value="nate.com">nate.com</option>
+						</select></li><br> <!-- 타입 수정 -->
+					</div><br>
+					<div>
+						<span>시도 시군구 이하주소</span><br>
+						<select name="user-L-add">
+							<option value="서울특별시">서울특별시</option>
+							<option value="부산광역시">부산광역시</option>
+							<option value="대구광역시">대구광역시</option>
+							<option value="인천광역시">인천광역시</option>
+							<option value="광주광역시">광주광역시</option>
+							<option value="대전광역시">대전광역시</option>
+							<option value="울산광역시">울산광역시</option>
+							<option value="세종특별자치시">세종특별자치시</option>
+							<option value="경기도">경기도</option>
+							<option value="강원도">강원도</option>
+							<option value="충청북도">충청북도</option>
+							<option value="충청남도">충청남도</option>
+							<option value="전라북도">전라북도</option>
+							<option value="전라남도">전라남도</option>
+							<option value="경상북도">경상북도</option>
+							<option value="경상남도">경상남도</option>
+							<option value="제주특별자치도">제주특별자치도</option>
+						</select>
+						<input type="text" name="user-M-add" size="15" placeholder="중구 남대문로 120">
+						<input type="text" name="user-S-add" size="14" placeholder="대일빌딩 3F"><br> <!-- 타입 수정(시도,시군구,이하주소) -->
+					</div>
+					<input type="url" name="user-website" class="insert" placeholder="웹사이트 url - ex) http://www.cake.com"><br>
+					<input type="url" name="user-chatting" class="insert" placeholder="오픈채팅 url - ex) http://OOO"><br>
+					<!-- 가입일시 | 위도, 경도 | 평점 | 가입승인여부 | 탈퇴신청여부 | -->
+				</section>
+				<br><hr>
+				
+				<h1>약관 동의</h1>
+				
+				<section id="insert-2">
+					<label><input type="checkbox" id="checkAll" class="allcheck" name="recieve"> CakeStation 전체 약관 및 마케팅 수신에 동의합니다.</label><br><br>&nbsp; <!-- 전체체크 -->
+					<label><input type="checkbox" name="recieve">&nbsp; 개인정보 수집 및 이용</label><br>&nbsp;
+					<label><input type="checkbox" name="recieve">&nbsp; 전자금융거래 약관</label><br>&nbsp;
+					<label><input type="checkbox" name="recieve">&nbsp; CakeStation 이용약관</label><br><br>
+					<!-- 체크박스 전체 다 체크돼야 동의로 넘어감.아니면 팝업 -->
+				</section>
+					<input type="hidden" name="agree" value="Y">
+					<input type="submit" id="submitBtn" class="btn regist" value="회원가입">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="reset" class="btn reset" value="취소">
+				</form>
+
+			</section>
+		</section>
+
+	</main>
+
+
+<!-- 푸터 -->
+	<footer>
+		<section>
+	        <section class="footer" id="footer1">
+	            <a id="f-title">Cake Station Company</a><br>
+	            <a class="f-text">서울특별시 중구 남대문로1가 남대문로 120<br></a>
+	            <a class="f-text">(대일빌딩2,3층)</a><br>
+	            <a id="f-mini">사업자등록번호 123-12-12345</a>
+	        </section>
+	        <section class="footer" id="footer2">
+	          	<img src="/img/Instagram_logo.png" width="30" id="instar">
+	           	<a>인스타 문의 :cakestation@iei_kh</a>
+	        </section>
+	        <section class="footer" id="footer3">
+	          	<a href="/notice/list" class="f-nav">공지사항</a><br>
+	           	<a href="/board/list" class="f-nav">고객센터</a><br>
+	           	<a class="f-text2">영업시간 (월~금)09:00~18:00</a><br>
+	           	<a class="f-text2">점심시간 12:00~13:00</a><br>
+	           	<a class="f-text2">토,일(공휴일휴무)</a>
+	         </section>
+	    </section>
+	</footer>
+
+
+
+
+
+</body>
+</html>
